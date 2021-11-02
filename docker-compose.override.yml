@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+  postgres:
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: eccomerce
+    ports:
+      - "5432:5432"
+  pgadmin4:
+    environment:
+      PGADMIN_DEFAULT_EMAIL: root@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
