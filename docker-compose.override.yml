@@ -5,9 +5,9 @@ services:
     build: .
   postgres:
     environment:
-      POSTGRES_USER: admin
+      POSTGRES_USER: 'admin'
       POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: eccomerce
+      POSTGRES_DB: 'eccomerce'
     ports:
       - "5432:5432"
   pgadmin4:
